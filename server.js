@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const fs = require('fs');
 
 // Constants
 const PORT = 8080;
@@ -13,8 +14,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/pokemon', (req, res) => {
-    res.send('Pokemon is alive!!');
-  });
+    let rawdata = fs.readFileSync('assets/pokemon.json');
+    let pokemons = JSON.parse(rawdata);
+    res.json(pokemons); 
+});
   
 
 app.listen(PORT, HOST);
