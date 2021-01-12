@@ -1,0 +1,13 @@
+{
+    "name": "project-pokemon-flux-back",
+    "version": "1.0.0",
+    "description": "",
+    "author": "alvaro.balmaceda@carbonobit.com>",
+    "main": "server.js",
+    "scripts": {
+      "serve": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1"
+    }
+  } 
