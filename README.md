@@ -9,3 +9,9 @@ yarn install
 ```
 yarn serve --port 8080
 ```
+
+## Project setup utilizando Docker
+
+```
+docker-compose up
+```
